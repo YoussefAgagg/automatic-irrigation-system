@@ -1,4 +1,4 @@
-package com.github.youssefagagg.automaticirrigationsystem.logging;
+package com.github.youssefagagg.automaticirrigationsystem.aop.logging;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

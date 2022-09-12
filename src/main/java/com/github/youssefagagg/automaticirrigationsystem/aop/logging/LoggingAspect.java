@@ -1,4 +1,4 @@
-package com.github.youssefagagg.automaticirrigationsystem.logging;
+package com.github.youssefagagg.automaticirrigationsystem.aop.logging;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -20,10 +20,10 @@ import java.util.Arrays;
 public class LoggingAspect {
 
     /**
-     * Retrieves the {@link Logger} associated to the given {@link JoinPoint}.
+     * Retrieves the {@link Logger} associated to the given {@link org.aopalliance.intercept.Joinpoint}.
      *
      * @param joinPoint join point we want the logger for.
-     * @return {@link Logger} associated to the given {@link JoinPoint}.
+     * @return {@link Logger} associated to the given {@link org.aopalliance.intercept.Joinpoint}.
      */
     private Logger logger(JoinPoint joinPoint) {
         return LoggerFactory.getLogger(joinPoint.getSignature().getDeclaringTypeName());
