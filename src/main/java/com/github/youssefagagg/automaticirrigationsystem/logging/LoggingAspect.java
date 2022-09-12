@@ -35,7 +35,7 @@ public class LoggingAspect {
      * @param joinPoint join point for advice.
      * @param e         exception.
      */
-    @AfterThrowing(pointcut = "@annotation(com.example.automaticirrigationsystem.aop.logging.Loggable)", throwing = "e")
+    @AfterThrowing(pointcut = "@annotation(com.github.youssefagagg.automaticirrigationsystem.aop.logging.Loggable)", throwing = "e")
     public void logAfterThrowing(JoinPoint joinPoint, Throwable e) {
         logger(joinPoint)
             .error(
@@ -54,7 +54,7 @@ public class LoggingAspect {
      * @return result.
      * @throws Throwable if an error occurs
      */
-    @Around("execution(* *(..)) && @annotation(com.example.automaticirrigationsystem.aop.logging.Loggable)")
+    @Around("execution(* *(..)) && @annotation(com.github.youssefagagg.automaticirrigationsystem.aop.logging.Loggable)")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         Logger log = logger(joinPoint);
         log.debug("Enter: {}() with argument[s] = {}", joinPoint.getSignature().getName(),
