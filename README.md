@@ -23,3 +23,10 @@ $  ./mvnw clean package -DskipTests && docker compose build &&  docker compose u
 ```
 ### the documentation for the rest api using Swagger UI:
 - http://localhost:8080/openapi/swagger-ui.html
+
+### working flow 
+- to start irrigation you need to attach a **sensor** first to the **plot**
+- if the **sensor** status is DOWN the system will try 3 times to call the sensor and after that make an alert on
+- to simulate the **sensor** status changes a request to update a **sensor** by using th **PUT** method
+- after the irrigation started you can end it by calling the endpoint **api/irrigate/end/{plotId}**
+- in the root dir a postman collection requests you that tests  the api 
