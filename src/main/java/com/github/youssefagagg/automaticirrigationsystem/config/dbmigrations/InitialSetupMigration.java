@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
+ * MongoDB database migrations using Mongock.
  * Creates the initial database setup.
  */
 @ChangeUnit(id = "initialization", order = "1")
