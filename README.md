@@ -13,7 +13,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Mave
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/youssefagagg/automaticirrigationsystem
+$ git clone https://github.com/youssefagagg/automatic-irrigation-system
 
 # Go into the repository, by changing to the directory where you have downloaded the project
 $ cd automaticirrigationsystem
