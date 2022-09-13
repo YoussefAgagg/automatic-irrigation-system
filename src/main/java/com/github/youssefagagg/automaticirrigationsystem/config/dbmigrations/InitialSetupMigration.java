@@ -84,4 +84,6 @@ public class InitialSetupMigration {
 
     }
 
+    @RollbackExecution
+    public void rollback() {}
 }

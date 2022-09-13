@@ -14,3 +14,8 @@ logging:
     org.springframework.web: DEBUG
     org.hibernate.SQL: DEBUG
     com.github.youssefagagg.automaticirrigationsystem: DEBUG
+springdoc:
+  swagger-ui.path: /openapi/swagger-ui.html
+  api-docs.path: /api-docs
+  packagesToScan: com.github.youssefagagg.automaticirrigationsystem.web.rest
+  pathsToMatch: /**
