@@ -129,7 +129,8 @@ public class PlotService {
     public Mono<Void> delete(String id) {
         log.debug("Request to delete Plot : {}", id);
        return plotRepository.findById(id).map(plot -> {
-            template.remove(plot.getSensor());
+            if (plot.getSensor()!=null)
+                template.remove(plot.getSensor());
             Query q = new Query(where("_id").in(plot.getSlots().stream().map(slot -> slot.getId()).collect(Collectors.toList())));
             template.findAllAndRemove(q,Slot.class);
             return plot;

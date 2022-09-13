@@ -4,4 +4,8 @@ services:
     image: mongo:4.4.15
     ports:
       - 27017:27017
+  automatic-irrigation:
+    build: ./
+    ports:
+      - "8080:8080"
 

@@ -4,7 +4,8 @@ mongock:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/?waitQueueMultiple=1000
+      host: host.docker.internal
+      port: 27017
       database: IrrigationSystem
 tries:
   count: 3
