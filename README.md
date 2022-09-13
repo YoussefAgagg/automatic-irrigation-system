@@ -16,7 +16,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Mave
 $ git clone https://github.com/youssefagagg/automatic-irrigation-system
 
 # Go into the repository, by changing to the directory where you have downloaded the project
-$ cd automaticirrigationsystem
+$ cd automatic-irrigation-system
 
 # To build the project and run it in a docker container execute the following command:
 $  ./mvnw clean package -DskipTests && docker compose build &&  docker compose up -d
