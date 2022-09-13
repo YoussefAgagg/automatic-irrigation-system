@@ -1,0 +1,16 @@
+mongock:
+  migration-scan-package:
+    - com.github.youssefagagg.automaticirrigationsystem.config.dbmigrations
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/?waitQueueMultiple=1000
+      database: IrrigationSystem
+tries:
+  count: 3
+logging:
+  level:
+    ROOT: Error
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    com.github.youssefagagg.automaticirrigationsystem: DEBUG

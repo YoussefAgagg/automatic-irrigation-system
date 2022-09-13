@@ -20,10 +20,10 @@ import java.util.Arrays;
 public class LoggingAspect {
 
     /**
-     * Retrieves the {@link Logger} associated to the given {@link org.aopalliance.intercept.Joinpoint}.
+     * Retrieves the {@link Logger} associated to the given {@link JoinPoint}.
      *
      * @param joinPoint join point we want the logger for.
-     * @return {@link Logger} associated to the given {@link org.aopalliance.intercept.Joinpoint}.
+     * @return {@link Logger} associated to the given {@link JoinPoint}.
      */
     private Logger logger(JoinPoint joinPoint) {
         return LoggerFactory.getLogger(joinPoint.getSignature().getDeclaringTypeName());
