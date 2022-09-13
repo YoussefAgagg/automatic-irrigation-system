@@ -53,8 +53,6 @@ public class InitialSetupMigration {
                 .rangeClosed(0,random.nextInt(2,10))
                 .mapToObj(i -> {
                     var slot =new Slot();
-                   // slot.setId("slot-" + plot.getPlotCode() +"-" +i);
-                    //slot.setPlot(plot);
                     slot.setStatus(Status.DOWN);
                     template.save(slot);
                     return slot;
@@ -86,6 +84,4 @@ public class InitialSetupMigration {
 
     }
 
-    @RollbackExecution
-    public void rollback() {}
 }
