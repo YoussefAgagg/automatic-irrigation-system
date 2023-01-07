@@ -22,7 +22,6 @@ import java.util.Set;
  * A Plot.
  */
 @Document(collection = "plot")
-@SuppressWarnings("common-java:DuplicatedBlocks")
 @Data
 public class Plot implements Serializable {
 
